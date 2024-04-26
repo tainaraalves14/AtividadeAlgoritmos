@@ -1,0 +1,79 @@
+Atividade de reforço – ALGORITMOS
+TAINARA ALVES DO NASCIMENTO 1C.COMP B
+
+FORMULÁRIO SÓ É VÁLIDO SE ENVIADO DURANTE A AULA ATÉ AS 22:00 h
+
+SOBRE O CONTEÚDO DA P1 (REFLEXÃO SOBRE SUAS DIFICULDADES):
+
+1)      Quais foram os conteúdos que você teve mais dificuldade? 
+Existe ainda alguma dúvida sobre o conteúdo já visto? Em caso afirmativo, 
+indique qual(is) é(são) essa(s) dúvida(s) e não esqueça de tirá-las durante
+a aula, presencialmente, com o professor.
+
+TEÓRICAS
+
+2)      Defina, com suas palavras, o que é um algoritmo do ponto de vista computacional.
+
+3)      Qual a utilidade dos comandos de repetição e de seleção? Dê um exemplo de cada 
+um desses comandos em PORTUGOL.
+
+PRÁTICAS (Para as questões práticas mostre primeiro a versão em PORTUGOL e depois a versão
+ equivalente em Python)
+
+4)      Elabore um algoritmo que deve imprimir na tela 15 vezes a frase “REVISÃO DE CONCEITOS”,
+ utilizando o comando ENQUANTO. Não esqueça de fazer comentários no seu código.
+
+5)      Elabore um algoritmo  que deve imprimir na tela os números pares  entre 1 e 35.
+
+6)      Utilizando o comando PARA...ATÉ, elabore um algoritmo que leia o nome e a idade de
+ 6 pessoas e indique, ao final, quantas dessas pessoas é maior de idade (18 anos ou mais).
+
+
+7)      Utilizando o comando PARA...ATÉ, escreva a versão correspondente ao algoritmo escrito
+ por você na questão 4.
+
+8)      Elabore um algoritmo para um caixa eletrônico que, com base no valor a ser sacado,
+ seja capaz de fornecer o menor número de cédulas de 2,5,10,20,50 e 100 reais para um usuário.
+Por exemplo, se uma pessoa for sacar 470 reais o caixa eletrônico deveria liberar: 4 cédulas
+de 100 reais, 1 cédula de 50 reais e uma cédula de 20 reais. Dica: você pode utilizar os 
+operadores MOD e DIV.
+
+9)      Considere que você está organizando uma competição de músicos entre três participantes:
+Alice, Bob e Carol. Cada participante recebe uma pontuação com base na sua performance, onde 
+o valor mais baixo indica a melhor pontuação. Inicialmente, as pontuações dos participantes são
+ as seguintes:
+
+Pontuação de Alice: 8 pontos
+Pontuação de Bob: 10 pontos
+Pontuação de Carol: 12 pontos
+
+Você possui um algoritmo para reorganizar as pontuações dos participantes da seguinte maneira 
+(lembre-se que ⭠ representa uma atribuição):
+
+Se a Pontuação de Alice for menor que a Pontuação de Bob:
+         X ⭠ Pontuação de Alice
+         Pontuação de Alice ⭠ Pontuação de Bob
+         Pontuação de Bob ⭠ X
+
+Se a Pontuação de Bob for menor que a Pontuação de Carol:
+         X ⭠ Pontuação de Bob
+         Pontuação de Bob ⭠ Pontuação de Carol
+         Pontuação de Carol ⭠ X
+
+Se a Pontuação de Alice for menor que a Pontuação de Bob:
+         X ⭠Pontuação de Alice
+         Pontuação de Alice ⭠ Pontuação de Bob
+         Pontuação de Bob ⭠ X
+
+ Após a execução do algoritmo, qual será a pontuação e a classificação final dos participantes
+  (do primeiro ao terceiro lugar)?
+
+10)   Implemente o algoritmo seguinte em python. Indique os valores iniciais das variáveis A
+ e B e seus valores finais quando o programa termina. Comente sobre o seguinte: a segunda
+  instrução de atribuição de um valor para A, alterou o valor da variável B? Por que isso acontece?
+
+A⭠ 4
+B ⭠ A / 2
+escreva (A, B)
+A ⭠ A + 1 
+escreva (A, B)

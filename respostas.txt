@@ -1,0 +1,222 @@
+Atividade de reforço – ALGORITMOS
+TAINARA ALVES DO NASCIMENTO 1C.COMP B
+
+1) 
+Diante dessa prova, uma das maiores dificuldades que enfrentei foi confrontar minhas próprias inseguranças.
+É importante lembrar que não estou sozinha nessa jornada. 
+
+2) 
+Um algoritmo, do ponto de vista computacional, é uma sequência de 
+passos bem definidos que levam à resolução de um problema ou à realização de uma tarefa específica.
+Ou seja, nada mais é do que a lógica de encadear pensamentos, de modo que cada passo seja definidos 
+e executados.
+
+3)
+Os comandos de repetição são úteis para executar um conjunto de instruções repetidamente até que uma 
+condição seja atendida, enquanto os comandos de seleção são úteis para tomar decisões com base em condições
+específicas.
+
+
+Exemplo de comando de repetição (ENQUANTO) em PORTUGOL:
+
+inteiro contador
+
+contador ⭠ 1
+ENQUANTO contador <= 10 FAÇA
+    escreva(contador)
+    contador ⭠ contador + 1
+FIM_
+
+
+Exemplo de comando de seleção (SE) em PORTUGOL:
+
+inteiro numero
+
+leia(numero)
+
+SE numero > 0 ENTÃO
+    escreva("O número é positivo.")
+SENÃO
+    escreva("O número é negativo.")
+FIM_SE
+
+
+4) 
+
+PORTUGOL:
+inteiro contador
+
+contador ⭠ 1
+ENQUANTO contador <= 15 FAÇA
+    escreva("REVISÃO DE CONCEITOS")
+    contador ⭠ contador + 1
+FIM_ENQUANTO
+
+Python:
+contador = 1
+
+while contador <= 15:
+    print("REVISÃO DE CONCEITOS")
+    contador += 1
+
+5) 
+
+PORTUGOL:
+
+inteiro numero
+
+PARA numero DE 2 ATÉ 35 PASSO 2 FAÇA
+    escreva(numero)
+FIM_PARA
+
+
+Python:
+python
+for numero in range(2, 36, 2):
+    print(numero)
+
+
+6)
+Algoritmo VerificarMaioridade
+    // Variável para contar o número de pessoas maiores de idade
+    maioridade <- 0
+    
+    // Loop para ler o nome e a idade de 6 pessoas
+    PARA i DE 1 ATÉ 6 FAÇA
+        // Ler nome e idade da pessoa
+        ESCREVER "Digite o nome da pessoa ", i, ":"
+        LER nome
+        ESCREVER "Digite a idade da pessoa ", i, ":"
+        LER idade
+        
+        // Verificar se a pessoa é maior de idade
+        SE idade >= 18 ENTÃO
+            maioridade <- maioridade + 1
+        FIM SE
+    FIM PARA
+
+    // Mostrar o número de pessoas maiores de idade
+    ESCREVER "O número de pessoas maiores de idade é: ", maioridade
+FIM Algoritmo
+
+
+7)
+
+EXEMPLO: 
+
+Algoritmo Tabuada
+    // Ler o número para o qual se deseja calcular a tabuada
+    ESCREVER "Digite um número para ver sua tabuada:"
+    LER numero
+    
+    // Mostrar a tabuada do número fornecido
+    ESCREVER "Tabuada do ", numero, ":"
+    PARA i DE 1 ATÉ 10 FAÇA
+        resultado <- numero * i
+        ESCREVER numero, " x ", i, " = ", resultado
+    FIM PARA
+FIM Algoritmo
+
+
+Algoritmo RevisaoDeConceitos
+    // Variável para controlar o loop
+    inteiro contador
+    
+    // Inicializar o contador
+    contador ⭠ 1
+    
+    // Loop para imprimir a frase 15 vezes
+    PARA contador DE 1 ATÉ 15 FAÇA
+        escreva("REVISÃO DE CONCEITOS")
+    FIM PARA
+FIM Algoritmo
+
+
+8) 
+Algoritmo CaixaEletronico
+    // Ler o valor a ser sacado
+    ESCREVER "Digite o valor a ser sacado:"
+    LER valor_sacado
+    
+    // Inicializar as variáveis para contar o número de cédulas de cada valor
+    cedulas_100 <- 0
+    cedulas_50 <- 0
+    cedulas_20 <- 0
+    cedulas_10 <- 0
+    cedulas_5 <- 0
+    cedulas_2 <- 0
+    
+    // Calcular o número de cédulas para cada valor
+    SE valor_sacado >= 100 ENTÃO
+        cedulas_100 <- valor_sacado DIV 100
+        valor_sacado <- valor_sacado MOD 100
+    FIM SE
+    
+    SE valor_sacado >= 50 ENTÃO
+        cedulas_50 <- valor_sacado DIV 50
+        valor_sacado <- valor_sacado MOD 50
+    FIM SE
+    
+    SE valor_sacado >= 20 ENTÃO
+        cedulas_20 <- valor_sacado DIV 20
+        valor_sacado <- valor_sacado MOD 20
+    FIM SE
+    
+    SE valor_sacado >= 10 ENTÃO
+        cedulas_10 <- valor_sacado DIV 10
+        valor_sacado <- valor_sacado MOD 10
+    FIM SE
+    
+    SE valor_sacado >= 5 ENTÃO
+        cedulas_5 <- valor_sacado DIV 5
+        valor_sacado <- valor_sacado MOD 5
+    FIM SE
+    
+    SE valor_sacado >= 2 ENTÃO
+        cedulas_2 <- valor_sacado DIV 2
+    FIM SE
+    
+    // Mostrar o número de cédulas de cada valor
+    ESCREVER "Cédulas de 100 reais: ", cedulas_100
+    ESCREVER "Cédulas de 50 reais: ", cedulas_50
+    ESCREVER "Cédulas de 20 reais: ", cedulas_20
+    ESCREVER "Cédulas de 10 reais: ", cedulas_10
+    ESCREVER "Cédulas de 5 reais: ", cedulas_5
+    ESCREVER "Cédulas de 2 reais: ", cedulas_2
+FIM Algoritmo
+```
+
+calcula o número mínimo de cédulas para o valor solicitado.
+Se houver cédulas disponíveis de um determinado valor ele calculará quantas
+dessas cédulas serão necessárias e, em seguida, calculará o valor restante e 
+continuará para o próximo valor de cédula.
+
+9)
+
+1. Inicial: Alice (8), Bob (10), Carol (12)
+2. Como a pontuação de Alice é menor que a pontuação de Bob, trocamos suas pontuações:
+   Alice (10), Bob (8), Carol (12)
+3. Como a pontuação de Bob é menor que a pontuação de Carol, trocamos suas pontuações:
+   Alice (10), Bob (12), Carol (8)
+4. Como a pontuação de Alice é menor que a pontuação de Bob, trocamos suas pontuações:
+   Alice (12), Bob (10), Carol (8)
+
+Após a execução do algoritmo, a classificação final dos participantes, do primeiro ao terceiro lugar, 
+é a seguinte:
+
+1. Alice - 12 pontos
+2. Bob - 10 pontos
+3. Carol - 8 pontos
+
+10) 
+
+python
+# Valores iniciais
+A = 4
+B = A / 2
+print("Valores iniciais:", A, B)
+
+# Atribuição de um novo valor para A
+A = A + 1
+print("Valores finais:", A, B)
+
